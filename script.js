@@ -372,42 +372,42 @@ document.addEventListener('DOMContentLoaded', function() {
     const ingredients = [
         {
             name: 'Millet',
-            image: '/millet.jpg?height=50&width=50',
+            image: '/images/millet.jpg?height=50&width=50',
             subtitle: 'Ancient Super Grain',
             description: 'Millet is a group of highly variable small-seeded grasses, widely grown around the world as cereal crops. Millets are important crops in the semiarid tropics of Asia and Africa, with 97% of millet production in developing countries.',
             benefits: ['High in Protein', 'Gluten-Free', 'Rich in Antioxidants', 'Supports Heart Health', 'Low Glycemic Index']
         },
         {
             name: 'Coconut Water',
-            image: '/coconut.jpeg?height=50&width=50',
+            image: '/images/coconut.jpeg?height=50&width=50',
             subtitle: 'Nature Sports Drink',
             description: 'Coconut water is the clear liquid found inside young, green coconuts. Often called "nature sports drink," it has been consumed for centuries in tropical regions for its refreshing taste and natural electrolyte content.',
             benefits: ['Natural Electrolytes', 'Superior Hydration', 'Low in Calories', 'Potassium Rich', 'No Added Sugar', 'Post-Workout Recovery']
         },
         {
             name: 'Chia Seeds',
-            image: '/chia.jpeg?height=50&width=50',
+            image: '/images/chia.jpeg?height=50&width=50',
             subtitle: 'Ancient Omega Powerhouse',
             description: 'Chia seeds are tiny black seeds from the plant Salvia hispanica, which was grown in Mexico and Guatemala by the Aztecs. Despite their small size, chia seeds are among the most nutritious foods on the planet, packed with fiber, protein, omega-3 fatty acids, and various micronutrients.',
             benefits: ['Omega-3 Fatty Acids', 'High Fiber Content', 'Plant-Based Protein', 'Sustained Energy', 'Heart Health', 'Bone Strength']
         },
         {
             name: 'Citrus',
-            image: '/citrus.jpeg?height=50&width=50',
+            image: '/images/citrus.jpeg?height=50&width=50',
             subtitle: 'Vitamin C Boost',
             description: 'Citrus fruits are notable for their fragrance, partly due to flavonoids and limonoids contained in the rind, and most are juice-laden. The juice contains a high quantity of citric acid and other organic acids giving them their characteristic sharp flavor.',
             benefits: ['Immune Support', 'Skin Health', 'Hydration', 'Digestive Aid', 'Reduces Inflammation']
         },
         {
             name: 'Honey',
-            image: '/honey.jpeg?height=50&width=50',
+            image: '/images/honey.jpeg?height=50&width=50',
             subtitle: 'Natural Sweetener',
             description: 'Honey is a sweet, viscous food substance made by honey bees and some related insects. Bees produce honey from the sugary secretions of plants or from secretions of other insects, by regurgitation, enzymatic activity, and water evaporation.',
             benefits: ['Antioxidant Properties', 'Wound Healing', 'Cough Suppressant', 'Prebiotic Support', 'Natural Energy']
         },
         {
             name: 'Ginger',
-            image: '/ginger.jpeg?height=50&width=50',
+            image: '/images/ginger.jpeg?height=50&width=50',
             subtitle: 'Aromatic Root',
             description: 'Ginger is a flowering plant whose rhizome, ginger root or ginger, is widely used as a spice and a folk medicine. It is a herbaceous perennial which grows annual pseudostems about one meter tall bearing narrow leaf blades.',
             benefits: ['Digestive Aid', 'Anti-inflammatory', 'Nausea Relief', 'Immune Support', 'Pain Reduction']
