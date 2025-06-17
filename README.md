@@ -4,7 +4,7 @@ A modern, responsive website for Kyara Beverages, showcasing millet-based fruit 
 
 
 ## 🚀 Live Demo
-
+-**Website:** `https://kyarawebdevelopment.netlify.app/`
 - **Frontend:** Open `index.html` in your browser
 - **CMS Admin:** `http://localhost:1337/admin` (when Strapi is running)
 
