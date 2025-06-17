@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kyara Beverages - Refreshment, Reimagined</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+     <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="nav-logo">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                    </svg>
+                </div>
+                <span class="nav-brand-text">Kyara</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#ingredients" class="nav-link">Ingredients</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#products" class="nav-link">Products</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <a href="#contact" class="nav-cta">Get Started</a>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+                <div class="hamburger"></div>
+            </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-menu">
+                <li class="mobile-nav-item">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#about" class="mobile-nav-link">About</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#ingredients" class="mobile-nav-link">Ingredients</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#products" class="mobile-nav-link">Products</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#contact" class="mobile-nav-link">Contact</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#contact" class="mobile-nav-cta">Get Started</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION WITH INTERACTIVE MILLET ANIMATION -->
+    <section class="hero" id="home">
+        <div id="canvas-container">
+            <canvas id="milletCanvas"></canvas>
+        </div>
+        <div class="hero-content">
+            <div class="logo">
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                </svg>
+            </div>
+            <h1>Kyara Beverages</h1>
+            <h2>Refreshment, Reimagined</h2>
+            <p><b>Discover the perfect blend of tradition and innovation with our millet-based fruit drinks</b></p>
+            <a href="#products" class="btn">Explore Our Drinks</a>
+        </div>
+        <div class="canvas-instructions">Move your cursor to interact with the millet grains</div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <svg viewBox="0 0 24 24">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+                <h2 class="section-title">Our Mission</h2>
+                <svg viewBox="0 0 24 24">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+                </svg>
+            </div>
+            <div class="about-content">
+                <p>At Kyara Beverages, we're reimagining refreshment with millet-based fruit drinks that honor ancient grains while embracing modern wellness.</p>
+                <p>Rooted in tradition and powered by innovation, we're on a mission to craft drinks that are nutritious, refreshing, and real—bringing you authentic flavors that nourish both body and soul.</p>
+                <p>Every sip tells a story of sustainability, health, and the timeless wisdom of natural ingredients, reimagined for today's conscious consumer.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- INGREDIENT EXPLORER SECTION -->
+    <section class="ingredient-explorer-section" id="ingredients">
+        <div class="container">
+            <div class="ingredient-explorer">
+                <div class="explorer-header">
+                    <h2 class="explorer-title">Discover Our Ingredients</h2>
+                    <p class="explorer-subtitle">Explore the natural elements that make Kyara beverages special</p>
+                </div>
+                
+                <div class="ingredient-wheel" id="ingredientWheel">
+                    <div class="wheel-center" id="wheelCenter">
+                        Kyara<br>Beverages
+                    </div>
+                </div>
+                
+                <div class="ingredient-info" id="ingredientInfo">
+                    <div class="close-info" id="closeInfo"></div>
+                    <div class="info-header">
+                        <img src="/placeholder.svg" alt="" class="info-image" id="infoImage">
+                        <div>
+                            <h3 class="info-title" id="infoTitle"></h3>
+                            <p class="info-subtitle" id="infoSubtitle"></p>
+                        </div>
+                    </div>
+                    <div class="info-content" id="infoContent"></div>
+                    <div class="info-benefits">
+                        <h4 class="info-benefits-title">Health Benefits</h4>
+                        <div class="benefits-list" id="benefitsList"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section with Card Flip Animation -->
+<section class="products" id="products">
+    <div class="container">
+        <div class="products-header">
+            <svg viewBox="0 0 24 24">
+                <path d="M9.5 2A1.5 1.5 0 0 0 8 3.5v1A1.5 1.5 0 0 0 9.5 6h5A1.5 1.5 0 0 0 16 4.5v-1A1.5 1.5 0 0 0 14.5 2h-5zM12 7a5 5 0 0 1 5 5v6a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2v-6a5 5 0 0 1 5-5z"/>
+            </svg>
+            <h2>Our Signature Drinks</h2>
+            <p>Hover over each card to discover the nutritional benefits of our millet-based beverages</p>
+        </div>
+        
+        <div class="products-grid">
+            <!-- Product 1: Mango Millet Fusion -->
+            <div class="product-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/mango.jpeg?height=300&width=120" alt="Mango Millet Fusion" class="product-image">
+                        <h3 class="product-title">Mango Millet Fusion</h3>
+                        <p class="product-tagline">Tropical meets traditional</p>
+                        <div class="flip-hint">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9l-6.91.74L12 16l-3.09-6.26L2 9l6.91-.74L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3 class="product-title">Nutrition Facts</h3>
+                        <p class="product-description">Our signature blend combines tropical mango sweetness with wholesome millet grains for the perfect nutritious refreshment.</p>
+                        
+                        <div class="nutrition-grid">
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">12g</span>
+                                <span class="nutrition-label">Protein</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">0%</span>
+                                <span class="nutrition-label">Added Sugar</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">5g</span>
+                                <span class="nutrition-label">Fiber</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">$4.99</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2: Berry Millet Blend -->
+            <div class="product-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/berry.jpeg?height=300&width=120" alt="Berry Millet Blend" class="product-image">
+                        <h3 class="product-title">Berry Millet Blend</h3>
+                        <p class="product-tagline">Antioxidant powerhouse</p>
+                        <div class="flip-hint">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9l-6.91.74L12 16l-3.09-6.26L2 9l6.91-.74L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3 class="product-title">Nutrition Facts</h3>
+                        <p class="product-description">Antioxidant-rich berries combined with wholesome millet for natural energy and vibrant flavor that supports your wellness journey.</p>
+                        
+                        <div class="nutrition-grid">
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">10g</span>
+                                <span class="nutrition-label">Protein</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">9mg</span>
+                                <span class="nutrition-label">Anti Oxidant</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">6g</span>
+                                <span class="nutrition-label">Fiber</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">$5.49</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3: Citrus Millet Refresh -->
+            <div class="product-card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="/citrus.jpg?height=300&width=120" alt="Citrus Millet Refresh" class="product-image">
+                        <h3 class="product-title">Citrus Millet Refresh</h3>
+                        <p class="product-tagline">Vitamin C boost</p>
+                        <div class="flip-hint">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2l3.09 6.26L22 9l-6.91.74L12 16l-3.09-6.26L2 9l6.91-.74L12 2z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="card-back">
+                        <h3 class="product-title">Nutrition Facts</h3>
+                        <p class="product-description">Zesty citrus fruits paired with millet for the ultimate refreshing experience and vitamin C boost to energize your day.</p>
+                        
+                        <div class="nutrition-grid">
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">8g</span>
+                                <span class="nutrition-label">Protein</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">12mg</span>
+                                <span class="nutrition-label">VitaminC</span>
+                            </div>
+                            <div class="nutrition-item">
+                                <span class="nutrition-value">4g</span>
+                                <span class="nutrition-label">Fiber</span>
+                            </div>
+                        </div>
+                        
+                        <div class="product-price">$4.79</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to experience refreshment reimagined? We'd love to hear from you.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form">
+                    <div class="success-message" id="successMessage">
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                    <form id="contactForm">
+    <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+    </div>
+    <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required placeholder="Tell us about your interest in Kyara Beverages..."></textarea>
+    </div>
+    <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+</form>
+                </div>
+                <div class="contact-info">
+                    <h3>Let's Connect</h3>
+                    <p>Whether you're interested in our products, partnerships, or just want to learn more about our mission, we're here to help.</p>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>hello@kyarabeverages.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 1234567890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <p>New Delhi, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <svg viewBox="0 0 24 24">
+                        <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                    </svg>
+                </div>
+                <span class="footer-brand">Kyara Beverages</span>
+            </div>
+            <p>&copy; 2025 Kyara Beverages. Refreshment, Reimagined.</p>
+        </div>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
